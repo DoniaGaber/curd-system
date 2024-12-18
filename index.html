@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CURD System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <section>
+         <div class=container>
+             <div class="row">
+                 <div class="col-md-12 pt-5">
+                    <div class="system d-flex justify-content-center">
+                        <div class="crud-system">
+                            <div class="container">
+                                <h1 class="px-4">CURD-System</h1>
+                                <input class="form-control my-3" type="text" id="productName"
+                                placeholder="Enter Product Name">
+                                <input class="form-control my-3" type="text" id="productCategory"
+                                placeholder="Enter Product Category">
+                                <input class="form-control my-3" type="text" id="productPrice"
+                                placeholder="Enter Product Price">
+                                <textarea class="form-control my-3" id="productDescription" cols="30" rows="2" placeholder="Eenter Product Description" ></textarea>
+                                <button id="btn" onclick="addProduct()" class="form-control btn btn-info nb-5">Add Product</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="search">
+                           <input onkeyup="Search()"  class="form-control" type="text" placeholder="Search..." id="search">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="crud-table">
+                            <table class="table table-hover mt-4 text-white text-center">
+                                <thead>
+                                    <th>#</th>
+                                    <th>Name</th>
+                                    <th>Category</th>
+                                    <th>Price</th>
+                                    <th>Description</th>
+                                    <th>Delete</th>
+                                    <th>Update</th>
+                                </thead>
+                                <tbody id="product">
+                                    <tr>
+                                        <td>1</td>
+                                        <td>SAMSUMG</td>
+                                        <td>tv</td>
+                                        <td>6500</td>
+                                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, libero.</td>
+                                        <td><button class="btn btn-danger">Delete</button></td>
+                                        <td><button class="btn btn-success">Update</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                 </div>
+             </div>
+         </div>  
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

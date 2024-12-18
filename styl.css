@@ -1,0 +1,74 @@
+body{
+    background-color: #24353f;
+    font-family: 'Times New Roman', Times, serif;
+}
+.system .crud-system{
+    background-color: #24353f;
+    width: 75%;
+    box-shadow: 5px 5px 60px black;
+}
+.system .crud-system h1{
+    padding-top: 35px;
+    padding-bottom: 0px;
+    color: #17a2b8;
+}
+.system .crud-system input,
+.system .crud-system textarea{
+    width: 95%;
+    margin: auto;
+    background-color: transparent;
+    color: white;
+}
+.system .crud-system input::placeholder,
+.system .crud-system textarea::placeholder{
+    color: #ced4da;
+}
+.system .crud-system input:focus,
+.system .crud-system textarea:focus{
+    background-color: transparent;
+}
+.system .crud-system button{
+    width: 95%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    color: #17a2b8;
+    transition: all 1s;
+}
+.system .crud-system button:hover{
+    background-color: #17a2b8;
+    color: white;
+}
+.search input{
+    width: 75%;
+    margin: auto;
+    margin-top: 40px;
+    background-color: transparent;
+    color: white !important;
+}
+.search input::placeholder{
+    color: #ced4da;
+}
+.search input:focus{
+    background-color: transparent;
+}
+table tbody tr{
+    transition: all 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
